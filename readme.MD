@@ -1,25 +1,12 @@
-# tts-dataset
+# tts-dataset-maker
+<img src="tts_data.png">
 
-## Install
-
-### python depencies
+### Install
 pip install -r requirements.txt
+python create_dataset.py
 
-### Install ffmpeg
-For Windows:
-Download the ffmpeg build from the official website: FFmpeg Download Page.
-Unzip the downloaded file.
-Add the path to the ffmpeg bin folder (e.g., C:\path\to\ffmpeg\bin) to your system's PATH environment variable.
-For macOS:
-Use Homebrew to install ffmpeg:
+## About
+TTS dataset is a dataset that automatically creates data in the format needed for working with tts systems such as VITS.
 
-bash
-Copy code
-brew install ffmpeg
-For Linux:
-Use apt-get (or a similar package manager depending on your distribution):
+By running the script ona folder with a wav file and a .vtt file created by whisper you will automatically create a data folder with metadata.csv and wavs split up that you can use for training your own TTS system.
 
-bash
-Copy code
-sudo apt-get update
-sudo apt-get install ffmpeg
