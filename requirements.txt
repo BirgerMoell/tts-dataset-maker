@@ -1,0 +1,3 @@
+soundfile
+pytube
+insanely-fast-whisper
